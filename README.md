@@ -15,8 +15,11 @@ Guided Project 1 - ATM Console App (Procedural)
   - Enter a Project name, **Lastname_GP1_ATMConsoleApp_Procedural**.
   - Choose a location to save your project.
   - Click Create.
+
   ![Setup 1](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/1.-Setup-Project/setup_01.PNG)
+  
   ![Setup 2](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/1.-Setup-Project/setup_02.PNG)
+
 4. Set Up Your Program:
   - Visual Studio will create a default Program.cs file with some starter code.
   - Replace the existing code with the following:
