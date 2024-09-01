@@ -19,7 +19,7 @@ Create a C# console application that simulates an ATM. The app should include a 
 - [ ] Allow users to withdraw money from their account.
 - [ ] Show a list of recent transactions.
 
-### Guided Project Tasks
+### Let's Get Started: Guided Project Tasks
 
 - [ ] [Task 1. Setup Project](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/1.-Setup-Project/README.md)
 - [ ] [Task 2. Control Menu Display](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/2.-Control-Menu-Display/README.md)
