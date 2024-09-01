@@ -66,7 +66,7 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
 
 
 ### Next Task
-[Next 2. Control Menu Display](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/2.-Control-Menu-Display/README.md)
+Continue with the second part of this guided project: [Next 2. Control Menu Display](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/2.-Control-Menu-Display/README.md)
 
 ### Guided Project Tasks
 
