@@ -8,16 +8,32 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
         // List of cardholders with demo data
         static List<(string CardNumber, string Pin, string FullName, decimal Balance)> cardHolders;
 
+        // Dictionary to hold transactions history for each cardholder
+        static Dictionary<string, List<string>> transactionHistory;
+
         // Variable to hold the currently logged-in user's card number
         static string currentCardNumber = string.Empty;
 
         static void Main(string[] args)
         {
-            /* Insert codes from previous task. */
+            InitializeCardHolders();
+            InitializeTransactionHistory();
+            ShowMainMenu();
+
+            if (Login())
+            {
+                ShowSecureMenu();
+            }
         }
 
         // Initialize the list of cardholders with demo data
         public static void InitializeCardHolders()
+        {
+            /* Insert codes from previous task. */
+        }
+
+        // Initialize the transaction history dictionary
+        public static void InitializeTransactionHistory()
         {
             /* Insert codes from previous task. */
         }
@@ -64,6 +80,12 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
                     case "2":
                         DepositCash();  // Call method to deposit cash
                         break;
+                    case "3":
+                        WithdrawCash();  // Call method to withdraw cash
+                        break;
+                    case "4":
+                        ShowTransactions();  // Call method to show transaction history
+                        break;
                     case "5":
                         isLoggedIn = false;
                         Console.WriteLine("Logging out...");
@@ -84,24 +106,29 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
         // Method to deposit cash into the logged-in user's account
         public static void DepositCash()
         {
-            Console.WriteLine("Enter the amount to deposit:");
-            decimal depositAmount;
-            if (decimal.TryParse(Console.ReadLine(), out depositAmount) && depositAmount > 0)
+            /* Insert codes from previous task. */
+        }
+
+        // Method to withdraw cash from the logged-in user's account
+        public static void WithdrawCash()
+        {
+            /* Insert codes from previous task. */
+        }
+
+        // Method to show the transaction history for the logged-in user
+        public static void ShowTransactions()
+        {
+            if (transactionHistory.ContainsKey(currentCardNumber))
             {
-                for (int i = 0; i < cardHolders.Count; i++)
+                Console.WriteLine("Transaction History:");
+                foreach (var transaction in transactionHistory[currentCardNumber])
                 {
-                    if (cardHolders[i].CardNumber == currentCardNumber)
-                    {
-                        cardHolders[i] = (cardHolders[i].CardNumber, cardHolders[i].Pin, cardHolders[i].FullName, cardHolders[i].Balance + depositAmount);
-                        Console.WriteLine($"Successfully deposited: Php {depositAmount}");
-                        Console.WriteLine($"Your new balance is: Php {cardHolders[i].Balance}");
-                        break;
-                    }
+                    Console.WriteLine(transaction);
                 }
             }
             else
             {
-                Console.WriteLine("Invalid amount. Please enter a positive number.");
+                Console.WriteLine("No transactions found.");
             }
         }
     }
