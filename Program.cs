@@ -64,6 +64,9 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
                     case "2":
                         DepositCash();  // Call method to deposit cash
                         break;
+                    case "3":
+                        WithdrawCash();  // Call method to withdraw cash
+                        break;
                     case "5":
                         isLoggedIn = false;
                         Console.WriteLine("Logging out...");
@@ -84,17 +87,31 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
         // Method to deposit cash into the logged-in user's account
         public static void DepositCash()
         {
-            Console.WriteLine("Enter the amount to deposit:");
-            decimal depositAmount;
-            if (decimal.TryParse(Console.ReadLine(), out depositAmount) && depositAmount > 0)
+            /* Insert codes from previous task. */
+        }
+
+        // Method to withdraw cash from the logged-in user's account
+        public static void WithdrawCash()
+        {
+            Console.WriteLine("Enter the amount to withdraw:");
+            decimal withdrawAmount;
+            if (decimal.TryParse(Console.ReadLine(), out withdrawAmount) && withdrawAmount > 0)
             {
                 for (int i = 0; i < cardHolders.Count; i++)
                 {
                     if (cardHolders[i].CardNumber == currentCardNumber)
                     {
-                        cardHolders[i] = (cardHolders[i].CardNumber, cardHolders[i].Pin, cardHolders[i].FullName, cardHolders[i].Balance + depositAmount);
-                        Console.WriteLine($"Successfully deposited: Php {depositAmount}");
-                        Console.WriteLine($"Your new balance is: Php {cardHolders[i].Balance}");
+                        if (cardHolders[i].Balance >= withdrawAmount)
+                        {
+                            cardHolders[i] = (cardHolders[i].CardNumber, cardHolders[i].Pin, 
+                                cardHolders[i].FullName, cardHolders[i].Balance - withdrawAmount);
+                            Console.WriteLine($"Successfully withdrew: Php {withdrawAmount}");
+                            Console.WriteLine($"Your new balance is: Php {cardHolders[i].Balance}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Insufficient funds. Please enter a smaller amount.");
+                        }
                         break;
                     }
                 }
