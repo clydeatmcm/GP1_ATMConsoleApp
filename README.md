@@ -8,7 +8,7 @@ Guided Project 1 - ATM Console App (Procedural)
 ![Implement Cash Deposit Sample Run](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/5.-Implement-Cash-Deposit/Task5_Preview.gif)
 
 ### Details (Task 5 - Implement Cash Deposit)
-💡 In this task, you will add Cash Deposit functionality to your ATM console application. Start by updating the ShowSecureMenu method to include an option for depositing cash. Next, implement the DepositCash method to handle the deposit, update the user's balance, and provide appropriate feedback.
+💡 In this task, you will add Cash Deposit functionality to your ATM console application. Start by updating the ShowSecureMenu method to include an option for depositing cash. Next, implement the DepositCash method to handle the deposit, update the user's balance, and provide appropriate feedback. With these changes, the user can log in, check their balance, deposit money, and see the updated balance.
 
 1. Update the ShowSecureMenu Method. Add an option for cash deposit.
 ```csharp
@@ -50,7 +50,7 @@ public static void ShowSecureMenu()
     }
 }
 ```
-3. Implement the DepositCash Method. Create a method to handle the deposit, update the user's balance, and provide feedback.
+2. Implement the DepositCash Method. Create a method to handle the deposit, update the user's balance, and provide feedback.
 ```csharp
 // Method to deposit cash into the logged-in user's account
 public static void DepositCash()
