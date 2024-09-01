@@ -1,4 +1,4 @@
-# GP1_ATMConsoleApp
+# Task 4 - Implement Balance Enquiry
 Guided Project 1 - ATM Console App (Procedural)
 
 ### Task Preview
