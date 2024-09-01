@@ -1,4 +1,4 @@
 # GP1_ATMConsoleApp
 Guided Project 1 - ATM Console App (Procedural)
 
-![Task 1](Task1_Preview.png)
+![Task 1](./Task1_Preview.png)
