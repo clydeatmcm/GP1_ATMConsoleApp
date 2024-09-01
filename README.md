@@ -26,6 +26,8 @@ public static void InitializeCardHolders()
     };
 }
 ```
+The m suffix in 1000.00m indicates that the number is a decimal in C#. The decimal type provides high precision for financial calculations, which is important for applications like ATM systems. Without the m, the number would be treated as a double, which is less precise for handling money.
+
   - Update the Main Method. Call InitializeCardHolders at the beginning of the Main method to set up the demo data.
 ```csharp
 static void Main(string[] args)
