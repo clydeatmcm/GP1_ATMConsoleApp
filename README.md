@@ -69,7 +69,7 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
   - To build your project, go to the Build menu and select Build Solution.
   - To run your application, click the Start button (a green play arrow) on the toolbar or press F5 on your keyboard.
 6. Test Your Menus:
-  - The console window will display your menu options. Ensure the menus appear correctly and verify that the text is displayed as expected.
+  - The console window will show your menu options. Make sure the menus are displayed correctly and that the text appears as intended. ⚡ **Use your last name in the menu instead**.
 
 
 ### Next Task
