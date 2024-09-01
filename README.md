@@ -5,13 +5,13 @@ By completing this guided project,
 - [ ] Learners will enhance their skills in user interface design, data management, and handling user interactions, thereby building a comprehensive understanding of procedural programming and application development in C#.
 
 ### Here are the requirements for the ATM Console App:
-1. Project Setup: Create a new C# console application.
-2. Menu Display: Show a main menu and a secure menu for user options.
-3. CardHolder Data: Add demo cardholders with card numbers, PINs, names, and balances.
-4. Balance Enquiry: Allow users to check their account balance.
-5. Cash Deposit: Enable users to deposit money into their account.
-6. Withdrawal: Allow users to withdraw money from their account.
-7. Transactions: Show a list of recent transactions.
+- [ ] Create a new C# console application.
+- [ ] Show a main menu and a secure menu for user options.
+- [ ] Add demo cardholders with card numbers, PINs, names, and balances.
+- [ ] Allow users to check their account balance.
+- [ ] Enable users to deposit money into their account.
+- [ ] Allow users to withdraw money from their account.
+- [ ] Show a list of recent transactions.
 
 ### Guided Project Tasks
 
