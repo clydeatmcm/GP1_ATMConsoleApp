@@ -7,6 +7,9 @@ By completing this guided project,
 ### Problem Statement
 Create a C# console application that simulates an ATM. The app should include a main menu to insert a card or exit, and a secure menu for balance checks, cash deposits, withdrawals, and transaction viewing. Populate the system with demo cardholders with card numbers, PINs, names, and balances. Users should be able to check their balance, deposit and withdraw money, and view recent transactions. Ensure the application handles user credentials securely and updates balances accurately.
 
+### Activity Diagram
+![ATM Console App Flowchart](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/main/FlowChart_ATMConsoleApp.jpeg)
+
 ### Here are the requirements for the ATM Console App:
 - [ ] Create a new C# console application.
 - [ ] Show a main menu and a secure menu for user options.
