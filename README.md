@@ -53,8 +53,8 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
 ```
 
 
-### Next
-[Next 3. Populate Demo CardHolders](https://github.com/clydeatmcm/GP1_ATMConsoleApp)
+### Next Task
+Continue with the third part of this guided project: [Next 3. Populate Demo CardHolders](https://github.com/clydeatmcm/GP1_ATMConsoleApp)
 
 ### Guided Project Tasks
 
