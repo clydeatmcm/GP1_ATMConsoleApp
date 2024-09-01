@@ -63,7 +63,7 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
     - If you choose "2", the application will display "Exiting..." and close.
 
 4. Verify:
-    - Ensure the menus display correctly and that selecting options navigates appropriately. The login logic should correctly handle valid and invalid options.
+    - ⚡ Ensure the menus display correctly and that selecting options navigates appropriately. The login logic should correctly handle valid and invalid options.
 
 ### Next Task
 Continue with the third part of this guided project: [Next 3. Populate Demo CardHolders](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/3.-Populate-Demo-CardHolders/README.md)
