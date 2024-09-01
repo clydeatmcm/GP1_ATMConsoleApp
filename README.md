@@ -61,7 +61,7 @@ public static void CheckBalance()
     {
         if (cardHolder.CardNumber == currentCardNumber)
         {
-            Console.WriteLine($"Your current balance is: {cardHolder.Balance:C}");
+            Console.WriteLine($"Your current balance is: Php {cardHolder.Balance}");
             break;
         }
     }
