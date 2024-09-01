@@ -52,6 +52,18 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
 
 ```
 
+2. Build and Run:
+    - Save your changes by clicking File > Save All.
+    - Build your project by going to the Build menu and selecting Build Solution.
+    - Run the application by clicking the Start button (green play arrow) or pressing F5.
+
+3. Test the Application:
+    - The console will first show the main menu. Choose option "1" to simulate inserting an ATM card.
+    - If you choose "1", you will be logged in and see the secure menu.
+    - If you choose "2", the application will display "Exiting..." and close.
+
+4. Verify:
+    - Ensure the menus display correctly and that selecting options navigates appropriately. The login logic should correctly handle valid and invalid options.
 
 ### Next Task
 Continue with the third part of this guided project: [Next 3. Populate Demo CardHolders](https://github.com/clydeatmcm/GP1_ATMConsoleApp)
