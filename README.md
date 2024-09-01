@@ -5,7 +5,7 @@ Guided Project 1 - ATM Console App (Procedural)
 ![Task 1](./Task2_Preview.PNG)
 
 ### Details (Task 2 - Control Menu Display)
-In this task, the ATM console app is updated with a login feature and control menus. Users can either insert their ATM card or exit the app. If they insert the card, they access a secure menu for balance checks, cash deposits, or withdrawals. This update ensures users log in before accessing secure options and simplifies menu navigation and user input handling.
+💡 In this task, the ATM console app is updated with a login feature and control menus. Users can either insert their ATM card or exit the app. If they insert the card, they access a secure menu for balance checks, cash deposits, or withdrawals. This update ensures users log in before accessing secure options and simplifies menu navigation and user input handling.
 
 1. Replace Code in Program.cs:
 ```csharp
