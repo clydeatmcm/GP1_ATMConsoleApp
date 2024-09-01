@@ -12,7 +12,7 @@ Guided Project 1 - ATM Console App (Procedural)
   - In the Create a new project window, choose Console App from the list of templates. Ensure you select C# as the programming language.
   - Click Next.
 3. Configure Your Project:
-  - Enter a Project name, **Lastname_GP1_ATMConsoleApp_Procedural**.
+  - Enter a Project name, ⚡ **Lastname_GP1_ATMConsoleApp_Procedural**, replacing "Lastname" with your own last name.
   - Choose a location to save your project.
   - Click Create.
 
