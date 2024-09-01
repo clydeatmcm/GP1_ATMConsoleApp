@@ -5,73 +5,31 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
 {
     internal class Program
     {
+        // List of cardholders with demo data
         static List<(string CardNumber, string Pin, string FullName, decimal Balance)> cardHolders;
+
+        // Variable to hold the currently logged-in user's card number
+        static string currentCardNumber = string.Empty;
 
         static void Main(string[] args)
         {
-            InitializeCardHolders();
             /* Insert codes from previous task. */
         }
 
         // Initialize the list of cardholders with demo data
         public static void InitializeCardHolders()
         {
-            cardHolders = new List<(string, string, string, decimal)>
-            {
-                ("1234567890123456", "1234", "John Doe", 1000.00m),
-                ("2345678901234567", "2345", "Jane Smith", 2000.50m),
-                ("3456789012345678", "3456", "Alice Johnson", 1500.75m),
-                ("4567890123456789", "4567", "Bob Brown", 3000.00m),
-                ("5678901234567890", "5678", "Eve White", 500.25m)
-            };
+            /* Insert codes from previous task. */
         }
 
         public static bool Login()
         {
-            bool loggedIn = false;
-
-            string mainMenuChoice = Console.ReadLine();
-            switch (mainMenuChoice)
-            {
-                case "1":
-                    Console.WriteLine("Please enter your card number:");
-                    string cardNumber = Console.ReadLine();
-                    Console.WriteLine("Please enter your PIN:");
-                    string pin = Console.ReadLine();
-
-                    if (ValidateCredentials(cardNumber, pin))
-                    {
-                        loggedIn = true;
-                        Console.WriteLine("Login successful.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid card number or PIN. Please try again.");
-                    }
-                    break;
-                case "2":
-                    loggedIn = false;
-                    Console.WriteLine("Exiting...");
-                    break;
-                default:
-                    Console.WriteLine("Invalid option. Please try again.");
-                    break;
-            }
-
-            return loggedIn;
+            /* Insert codes from previous task. */
         }
 
         public static bool ValidateCredentials(string cardNumber, string pin)
         {
-            foreach (var cardHolder in cardHolders)
-            {
-                if (cardHolder.CardNumber == cardNumber && cardHolder.Pin == pin)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            /* Insert codes from previous task. */
         }
 
         public static void ShowMainMenu()
@@ -81,7 +39,70 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
 
         public static void ShowSecureMenu()
         {
-          /* Insert codes from previous task. */
+            bool isLoggedIn = true;
+
+            while (isLoggedIn)
+            {
+                Console.WriteLine("*--------------------------*");
+                Console.WriteLine("| Lastname ATM Secure Menu |");
+                Console.WriteLine("|                          |");
+                Console.WriteLine("| 1. Balance Enquiry       |");
+                Console.WriteLine("| 2. Cash Deposit          |");
+                Console.WriteLine("| 3. Withdrawal            |");
+                Console.WriteLine("| 4. Transactions          |");
+                Console.WriteLine("| 5. Logout                |");
+                Console.WriteLine("|                          |");
+                Console.WriteLine("*--------------------------*");
+
+                string secureMenuChoice = Console.ReadLine();
+
+                switch (secureMenuChoice)
+                {
+                    case "1":
+                        CheckBalance();  // Call method to check balance
+                        break;
+                    case "2":
+                        DepositCash();  // Call method to deposit cash
+                        break;
+                    case "5":
+                        isLoggedIn = false;
+                        Console.WriteLine("Logging out...");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option. Please try again.");
+                        break;
+                }
+            }
+        }
+
+        // Method to check and display the balance for the logged-in user
+        public static void CheckBalance()
+        {
+            /* Insert codes from previous task. */
+        }
+
+        // Method to deposit cash into the logged-in user's account
+        public static void DepositCash()
+        {
+            Console.WriteLine("Enter the amount to deposit:");
+            decimal depositAmount;
+            if (decimal.TryParse(Console.ReadLine(), out depositAmount) && depositAmount > 0)
+            {
+                for (int i = 0; i < cardHolders.Count; i++)
+                {
+                    if (cardHolders[i].CardNumber == currentCardNumber)
+                    {
+                        cardHolders[i] = (cardHolders[i].CardNumber, cardHolders[i].Pin, cardHolders[i].FullName, cardHolders[i].Balance + depositAmount);
+                        Console.WriteLine($"Successfully deposited: Php {depositAmount}");
+                        Console.WriteLine($"Your new balance is: Php {cardHolders[i].Balance}");
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid amount. Please enter a positive number.");
+            }
         }
     }
 }
