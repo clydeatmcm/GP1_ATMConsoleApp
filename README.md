@@ -95,7 +95,7 @@ public static bool ValidateCredentials(string cardNumber, string pin)
 - [x] The code maintains a procedural structure by using methods to handle functionality instead of relying on class instances.
 
 ### Next Task
-[Next 4. Implement Balance Enquiry](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/4.-Implement-Balance-Enquiry/README.md)
+Continue with the fourth part of this guided project: [Next 4. Implement Balance Enquiry](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/4.-Implement-Balance-Enquiry/README.md)
 
 ### Guided Project Tasks
 
