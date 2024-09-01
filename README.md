@@ -1,4 +1,4 @@
-# GP1_ATMConsoleApp
+# Task 3 - Populate Demo CardHolders
 Guided Project 1 - ATM Console App (Procedural)
 
 ### Task Preview
