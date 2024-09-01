@@ -62,6 +62,8 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
 }
 ```
 
+💡 This C# code creates a basic ATM console app. It has a Program class with a Main method that shows two menus. The ShowMainMenu displays options to insert a card or exit, and the ShowSecureMenu offers choices for checking balance, depositing cash, withdrawing, viewing transactions, or logging out.
+
 5. Build and Run Your Application:
   - Save your changes by clicking File > Save All.
   - To build your project, go to the Build menu and select Build Solution.
