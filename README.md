@@ -1,4 +1,4 @@
-# GP1_ATMConsoleApp
+# Task 5 - Implement Cash Deposit
 Guided Project 1 - ATM Console App (Procedural)
 
 ### Task Preview
