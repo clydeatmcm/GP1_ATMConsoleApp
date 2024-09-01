@@ -85,6 +85,13 @@ public static bool ValidateCredentials(string cardNumber, string pin)
   - Run the application by clicking the Start button or pressing F5.
   - ⚡ Test the login process with demo card numbers and PINs to ensure everything works correctly.
 
+### Key Changes
+- [x] A list of tuples (string CardNumber, string Pin, string FullName, decimal Balance) is used to represent card holders instead of a class. This keeps the approach procedural.
+- [x] InitializeCardHolders method initializes the list of card holders with demo data. This method is called at the start of the Main method.
+- [x] The Login method now asks for the card number and PIN and uses the ValidateCredentials method to verify them.
+- [x] The ValidateCredentials method checks if the entered card number and PIN match any entry in the cardHolders list.
+- [x] The code maintains a procedural structure by using methods to handle functionality instead of relying on class instances.
+
 ### Next Task
 [Next 4. Implement Balance Enquiry](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/4.-Implement-Balance-Enquiry/README.md)
 
