@@ -83,9 +83,9 @@ public static bool ValidateCredentials(string cardNumber, string pin)
   - Save your changes by clicking File > Save All.
   - Build the project by selecting Build > Build Solution.
   - Run the application by clicking the Start button or pressing F5.
-  - ⚡ Test the login process with demo card numbers and PINs to ensure everything works correctly.
+  - Test the login process with demo card numbers and PINs to ensure everything works correctly.
 
-### Key Changes
+### ⚡ Key Changes
 - [x] A list of tuples (string CardNumber, string Pin, string FullName, decimal Balance) is used to represent card holders instead of a class. This keeps the approach procedural.
 - [x] InitializeCardHolders method initializes the list of card holders with demo data. This method is called at the start of the Main method.
 - [x] The Login method now asks for the card number and PIN and uses the ValidateCredentials method to verify them.
