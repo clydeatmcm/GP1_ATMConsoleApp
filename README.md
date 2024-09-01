@@ -1,4 +1,4 @@
-# GP1_ATMConsoleApp
+# Task 2 - Control Menu Display
 Guided Project 1 - ATM Console App (Procedural)
 
 ### Task Preview
