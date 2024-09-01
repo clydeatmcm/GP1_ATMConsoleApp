@@ -4,6 +4,9 @@ By completing this guided project,
 - [ ] Learners will populate demo cardholders to simulate real-world data and implement essential ATM functionalities, including balance enquiry, cash deposits, withdrawals, and transaction tracking.
 - [ ] Learners will enhance their skills in user interface design, data management, and handling user interactions, thereby building a comprehensive understanding of procedural programming and application development in C#.
 
+### Problem Statement
+Create a C# console application that simulates an ATM. The app should include a main menu to insert a card or exit, and a secure menu for balance checks, cash deposits, withdrawals, and transaction viewing. Populate the system with demo cardholders with card numbers, PINs, names, and balances. Users should be able to check their balance, deposit and withdraw money, and view recent transactions. Ensure the application handles user credentials securely and updates balances accurately.
+
 ### Here are the requirements for the ATM Console App:
 - [ ] Create a new C# console application.
 - [ ] Show a main menu and a secure menu for user options.
