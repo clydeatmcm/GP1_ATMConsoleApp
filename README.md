@@ -1,8 +1,8 @@
 # Guided Project 1 - ATM Console App (Procedural)
 By completing this guided project, 
-- [ ] Learners will gain practical experience in developing a functional ATM Console Application using C#. The project will guide them through the entire development process, starting with setting up the project environment and managing menu displays.
-- [ ] Learners will populate demo cardholders to simulate real-world data and implement essential ATM functionalities, including balance enquiry, cash deposits, withdrawals, and transaction tracking.
-- [ ] Learners will enhance their skills in user interface design, data management, and handling user interactions, thereby building a comprehensive understanding of procedural programming and application development in C#.
+- [ ] Gain hands-on experience creating a working ATM Console App with C#, from setting up the project to managing menus.
+- [ ] Populate demo cardholders and build key ATM features, like checking balances, depositing and withdrawing cash, and tracking transactions.
+- [ ] Improve their skills in designing user interfaces, managing data, and handling user interactions, gaining a solid understanding of procedural programming and app development in C#.
 
 ### Problem Statement
 Create a C# console application that simulates an ATM. The app should include a main menu to insert a card or exit, and a secure menu for balance checks, cash deposits, withdrawals, and transaction viewing. Populate the system with demo cardholders with card numbers, PINs, names, and balances. Users should be able to check their balance, deposit and withdraw money, and view recent transactions. Ensure the application handles user credentials securely and updates balances accurately.
