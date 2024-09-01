@@ -1,4 +1,4 @@
-# GP1_ATMConsoleApp
+# Task 7 - Implement Transactions
 Guided Project 1 - ATM Console App (Procedural)
 
 ### Task Preview
