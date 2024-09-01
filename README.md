@@ -7,7 +7,7 @@ Guided Project 1 - ATM Console App (Procedural)
 ### Sample Run
 ![Implement Transactions Sample Run](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/7.-Implement-Transactions/Task7_Preview.gif)
 
-### Done. Congratulations! - Try this challenges and collect 10 trophies 🏆.
+### Done. 🚀 Congratulations! - Try this challenges and collect 10 trophies 🏆.
 
 - [ ] 🏆 GP1_Challenge1. **Limit PIN Attempts:** Limit the cardholders to enter their PIN a maximum of three times. If the user fails to enter the correct PIN within three attempts, the account should be locked, and the user should not be able to try again until a predefined time has passed.
 
