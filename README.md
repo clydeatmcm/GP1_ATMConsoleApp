@@ -8,7 +8,7 @@ Guided Project 1 - ATM Console App (Procedural)
 ![Populate Demo CardHolders Sample Run](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/4.-Implement-Balance-Enquiry/Task4_Preview.gif)
 
 ### Details (Task 4 - Implement Balance Enquiry)
-To implement the Balance Enquiry task in your C# program, we need to add functionality to the ShowSecureMenu method to allow users to check their balance after logging in.
+💡 To implement the Balance Enquiry task in your C# program, we need to add functionality to the ShowSecureMenu method to allow users to check their balance after logging in.
 
 1. Track the Current User. Store the logged-in cardholder's details so that the balance enquiry is specific to the logged-in user.
 ```csharp
@@ -68,8 +68,16 @@ public static void CheckBalance()
 }
 ```
 
+### ⚡ Key Changes
+- [x] Added a variable currentCardNumber to keep track of the currently logged-in user.
+- [x] If the login is successful, the currentCardNumber is set to the logged-in card number.
+- [x] Added a loop to continuously show the secure menu until the user chooses to log out.
+ - Case "1" handles the balance enquiry by calling the CheckBalance method.
+ - Case "5" logs the user out and exits the secure menu loop.
+- [x] A new method that loops through cardHolders to find the balance of the logged-in user and displays it.
+
 ### Next Task
-[Next 5. Implement Cash Deposit](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/5.-Implement-Cash-Deposit/README.md)
+Continue with the fifth part of this guided project: [Next 5. Implement Cash Deposit](https://github.com/clydeatmcm/GP1_ATMConsoleApp/blob/5.-Implement-Cash-Deposit/README.md)
 
 ### Guided Project Tasks
 
