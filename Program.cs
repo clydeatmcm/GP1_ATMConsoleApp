@@ -5,32 +5,42 @@ namespace Lastname_GP1_ATMConsoleApp_Procedural
         static void Main(string[] args)
         {
             ShowMainMenu();
-            ShowSecureMenu();
+            if (Login())
+            {
+                ShowSecureMenu();
+            }
+        }
+
+        public static bool Login()
+        {
+            bool loggedIn = false;
+
+            string mainMenuChoice = Console.ReadLine();
+            switch(mainMenuChoice)
+            {
+                case "1": 
+                    loggedIn = true; 
+                    break;
+                case "2": 
+                    loggedIn = false;
+                    Console.WriteLine("Exiting...");
+                    break;
+                default:
+                    Console.WriteLine("Invalid option. Please try again.");
+                    break;
+            }
+
+            return loggedIn;
         }
 
         public static void ShowMainMenu() 
         {
-            Console.WriteLine("*--------------------------*");
-            Console.WriteLine("| Lastname ATM Main Menu   |");
-            Console.WriteLine("|                          |");
-            Console.WriteLine("| 1. Insert ATM Card       |");
-            Console.WriteLine("| 2. Exit                  |");
-            Console.WriteLine("|                          |");
-            Console.WriteLine("*--------------------------*");
+            /* Insert codes from previous task. */
         }
 
         public static void ShowSecureMenu()
         {
-            Console.WriteLine("*--------------------------*");
-            Console.WriteLine("| Lastname ATM Secure Menu |");
-            Console.WriteLine("|                          |");
-            Console.WriteLine("| 1. Balance Enquiry       |");
-            Console.WriteLine("| 2. Cash Deposit          |");
-            Console.WriteLine("| 3. Withdrawal            |");
-            Console.WriteLine("| 4. Transactions          |");
-            Console.WriteLine("| 5. Logout                |");
-            Console.WriteLine("|                          |");
-            Console.WriteLine("*--------------------------*");
+            /* Insert codes from previous task. */
         }
     }
 }
